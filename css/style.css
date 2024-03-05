@@ -1,0 +1,440 @@
+body{
+   
+    margin: 0;
+}
+.nav{
+   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.616);   
+}
+.menu .list-menu {
+    display: flex;
+}
+.menu .list-menu li {
+    list-style: none;
+    padding: 10px;
+}
+.menu .list-menu li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight:500;  
+   
+}
+.menu ul li a:hover{
+  color: rgb(10, 127, 127);
+}
+.sous-menu{
+    position: absolute;
+    box-shadow: 1px 2px 3px rgba(128, 128, 128, 0.131);
+    background-color: rgba(0, 0, 0, 0.692);
+    margin-top: 5px;
+    width: 250px;
+    margin-left: -30px;
+    padding: 10px;
+    display: none;
+ 
+}
+.boutique{
+    position: relative;
+}
+.boutique:hover > .sous-menu {
+    display: block;
+}
+
+@keyframes sortie {
+    0%   {opacity: 0; color: white; }
+    50%{ opacity: 0.5; color:white}
+    100%  {opacity: 1; color: rgb(10, 127, 127); }
+    
+}
+.identification{
+    margin-right: 50px;
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    height: 500px;
+   margin-top: 100px;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: monospace;
+    animation-duration: 6s;
+    animation-name: sortie;
+    animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+    text-align: center;
+
+    
+}
+.header{
+    
+    background-image: url(https://img.freepik.com/photos-premium/salle-sport-sol-noir-lumiere-jaune-au-plafond_899870-10360.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+.main{
+    background-color: rgb(10, 127, 127);
+}
+    
+
+.bg{
+    background-color:  rgba(10, 127, 127, 0.83);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.section1{
+   
+    background-image: url(https://www.slate.fr/sites/default/files/1_salle-sport-abonnes-absents.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+ 
+}
+.para-section1{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.article{
+    background-color: rgba(0, 0, 0, 0.865);
+     height: 700px;
+
+}
+.section2{
+    background-image: url(https://www.slate.fr/sites/default/files/1_salle-sport-abonnes-absents.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+.bg2{
+    background-color:rgba(0, 0, 0, 0.865);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+.ligne1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.ligne2{
+    display: flex;
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.style{
+    color: white;
+    margin-left: 50px;
+}
+.img{
+ margin-left: 150px;
+}
+.article2{
+    background-color: rgb(10, 127, 127);
+     height: 1000px;
+
+}
+
+.section3{
+    background-image: url(https://www.slate.fr/sites/default/files/1_salle-sport-abonnes-absents.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+.bg3{
+    background-color:rgba(10, 127, 127, 0.83);
+    height: 1000px;
+}
+.row1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+ 
+    
+}
+.font-style1{
+    margin-top: 80px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.font-style2{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.row2{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    background-color: rgba(0, 0, 0, 0.67);
+    height: 50vh;
+    margin-top: 40px;
+    box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.607);
+    box-sizing: hidden;
+    padding: 20px;
+}
+.row3{
+    display: flex;
+    justify-content: space-around;
+}
+.titre1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.musculation{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo-musculation{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://fr.fitnessnutrition.ca/cdn/shop/products/WT4047_LG.jpg?v=1605731733&width=480);
+    background-size: cover;
+    margin-top: -15px;
+}
+.cardio{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-cardio{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -15px;
+   
+}
+.fitness{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-fitness{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://us.123rf.com/450wm/thodonal/thodonal1405/thodonal140500250/28364013-ruban-%C3%A0-mesurer-autour-d-une-pomme-verte-isol%C3%A9-sur-blanc.jpg?ver=6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -15px;
+    
+}
+.logo-karaté{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://img.freepik.com/vecteurs-libre/boy-pratique-du-karate_1196-208.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top:-15px;
+    
+}
+.logo-self{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEixlMYu9IQrRFuMB9uhtL9CHLxawFf2515J_pIbarqfPuVWB2xJf8WPCQGpcL7EBFFaU&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -15px;
+}
+.logo-kick{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://img.freepik.com/photos-premium/pleine-grandeur-athlete-kickboxer-qui-execute-arts-martiaux-muay-thai-concept-sport-fond-blanc_136403-15915.jpg?w=2000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -15px;
+}
+.article3{
+    background-color:rgba(0, 0, 0, 0.865);
+    height: 700px;
+    width: 100%;
+}
+.section4{
+    background-image: url(https://www.slate.fr/sites/default/files/1_salle-sport-abonnes-absents.jpg);
+    background-size: cover;
+    height: 700px;
+}
+.bg4{
+    background-color: rgba(0, 0, 0, 0.865);
+    width: 100%;
+    height: 700px;
+}
+.row4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.row5{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.row6{
+    display: flex;
+    margin-top: 20px;
+    height: 300px;
+    margin-left: 45px;
+    margin-right: 50px;
+}
+.row7{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 45px;
+}
+.article4{
+    background-color: rgba(0, 0, 0, 0.768);
+    height: 700px;
+}
+.lgn1{
+    display: flex;
+   text-align: center;
+
+    
+}
+.lgn2{
+    display: flex;
+    justify-content: space-between;
+}
+.localisation{
+    display: flex;
+    color: white;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.logo-localisation{
+   margin-right: 10px;
+}
+.clock{
+    display: flex;
+    color: white;
+    margin-top: 20px;
+    margin-right: -400px;
+}
+.heure{
+    margin-top: 20px;
+    margin-right: -100px;
+    color: white;
+  
+}
+.logo-clock{
+    margin-right: 10px;
+}
+.footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.txt-footer{
+    margin-top: 30px;
+    color: white;
+}
+
+.partie2{
+    margin-top: 200px;
+    margin-bottom: 300px;
+   
+}
+.para-vetement{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+.bordure {
+    border: 2px solid rgb(10, 127, 127);
+    margin-top: 30px;
+}
+.horiz1{
+    display: flex;
+    justify-content: space-between;
+}
+.rectangle{
+    height: 550px;
+    margin-top: 150px;
+    box-shadow: 1px 2px 5px rgb(150, 147, 147);
+    background-color:white;
+}
+.item1{
+    
+    background-image: url(https://cdn.primini.tn/68fab5bb-6ab7-423d-b089-746cc4e8a54e.jpg);
+    background-size: cover;
+    height: 315px;
+}
+.item2{
+    
+    background-image: url(https://www.tuttosport.com.tn/29727-large_default/nike-legging-w-nsw-air.jpg);
+    background-size: cover;
+    height: 315px;
+}
+.item3{
+    
+    background-image: url(https://product-images.21run.com/product/5/0/2/c/502c97e6c82f3667e3f432e8d5a547f9c3fd4f49_025_DX0118_025_PHSFM001_2000.jpeg?auto=compress&fill=solid&fill-color=ffffff&fit=fillmax&h=1250&w=1250&s=3e4e6569987c4f081a3e4852ac558220);
+    background-size: cover;
+    height: 315px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+  
+    margin-top: 50px;
+
+}
+.like{
+    display: flex;
+    justify-content: space-around;
+}
+.price{
+    text-align: center;
+    color:rgb(10, 127, 127);
+    font-size: 15px;
+    font-weight: bold;
+}
+.bouton{
+    margin-top: 30px;
+    background-color:rgb(10, 127, 127) ;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+   border-radius: 5px;
+    margin-left: 70px;
+    
+}
+.quantite{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 3px;
+    width: 50px;
+    height: 30px;
+}
+
